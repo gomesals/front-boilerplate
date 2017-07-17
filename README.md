@@ -1,1 +1,2 @@
-// TODO: Readme
+# front-boilerplate
+Front-end project's boilerplate
