@@ -8,15 +8,29 @@ $text-white--secondary:	rgba(255,255,255,.7);
 $text-white--hint:		rgba(255,255,255,.5);
 $divider-white: 		rgba(255,255,255,.12);
 
-// $background-color:	#fafafa;
-$background-color:	#FFF;
-$primary:			#30cfd0;
-// $primary--light:	#5c7cfa;
-// $primary--dark:		#364fc7;
-$accent:			#764ba2;
-// $accent--light:		#cc5de8;
-// $accent--dark:		#862e9c;
-$gray--light:		#F9F7FF;
+$primary:				#0ca678;
+$primary--light:		#20c997;
+$primary--dark:			#087f5b;
+$accent:				#7048e8;
+$accent--light:			#845ef7;
+$accent--dark:			#5f3dc4;
+$gray:					#e9ecef;
+$gray--light:			#f8f9fa;
+$gray--dark:			#212529;
+$red:					#f03e3e !default;
+$red--light:			#ff6b6b !default;
+$red--dark:				#c92a2a !default;
+$green:					#0ca678 !default;
+$green--light:			#20c997 !default;
+$green--dark:			#087f5b !default;
+$blue:					#4263eb !default;
+$blue--light:			#5c7cfa !default;
+$blue--dark:			#364fc7 !default;
+$pink:					#d6336c !default;
+$pink--light:			#f06595 !default;
+$pink--dark:			#a61e4d !default;
+
+$background-color:	$gray--light;
 
 @custom-media --xs (max-width: 767px);
 @custom-media --sm-min (min-width: 768px);
