@@ -61,7 +61,7 @@ module.exports = grunt => {
         },
         files: [{
           expand: true,
-          cwd: 'src/view',
+          cwd: 'views',
           src: ['*.pug'],
           dest: 'dist/',
           ext: '.html'
@@ -89,6 +89,6 @@ module.exports = grunt => {
       }
     }
   })
-  grunt.registerTask('default', ['watch'])
+  grunt.registerTask('default', ['postcss', 'imagemin', 'watch'])
   grunt.registerTask('deploy', ['imagemin', 'pug', 'postcss', 'copy'])
 }
