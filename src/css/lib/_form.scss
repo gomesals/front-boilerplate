@@ -1,35 +1,53 @@
 .form-control {
-	margin-bottom: 1em;
-	label {
-		display: inline-block;
+  margin-bottom: 1em;
 
-		margin-bottom: .5em;
+  label {
+    display: inline-block;
 
-		color: $text--hint;
-	}
+    margin-bottom: .5em;
+
+    color: $text--hint;
+  }
+
+  &.checkbox {
+    label {
+      &:first-child {
+        display: block;
+
+        margin-bottom: 1em;
+      }
+
+      &:last-child {
+        color: $text--secondary;
+      }
+    }
+
+    input[type=checkbox] {
+      width: auto;
+      margin-right: .5em;
+    }
+  }
 }
+
 .help {
-	font-size: .9em;
-	font-style: italic;
+  font-size: .9em;
+  font-style: italic;
 
-	display: inline;
+  display: inline;
 
-	color: $text--secondary;
+  color: $text--secondary;
+
+  &.error {
+    color: $red;
+  }
 }
+
 .input{
-	width: 100%;
-	padding: .5em;
+  @mixin input;
+}
 
-	transition: border-color 150ms linear;
-	transition-property: background-color, border-color;
+textarea {
+  min-height: 100px;
 
-	border: 1px solid $gray;
-	border-radius: 4px;
-	&:hover{
-		border-color: color($gray shade(15%));
-	}
-	&:active, &:focus{
-		border-color: $accent;
-		outline: 0;
-	}
+  resize: vertical;
 }

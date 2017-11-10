@@ -1,52 +1,72 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+$footer: 60px;
+
+body, button, input, optgroup, select, textarea{
+  font-family: 'Inter UI', sans-serif;
+
+  font-feature-settings: "zero", "case", "tnum", "ss01";
+}
+
 * {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 
-	margin: 0;
-	padding: 0;
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
 }
-html{
-	box-sizing: border-box;
-	height: 100%;
+
+html {
+  box-sizing: border-box;
 }
-*, *:after, *:before{
-	box-sizing: inherit;
-}
+
 body {
-	font-size: 100%;
+  font-size: 100%;
 
-	position: relative;
+  min-height: 100%;
 
-	min-height: 100%;
-	margin: 0;
-	padding-bottom: 4em;
-
-	color: $text;
-	background-color: $background-color;
+  color: $text;
 }
+
 ::selection {
-	color: $text-white;
-	background: $primary;
+  color: $text-white;
+  background: $primary;
 }
-img{
-	max-width: 100%;
-	height: auto
+
+img {
+  max-width: 100%;
+  height: auto
 }
-main{
-	width: 75%;
-	margin: 0 auto;
+
+main {
+  padding: 2rem 6rem;
 }
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-	display: none !important;
+
+[v-cloak]>* {
+  display: none !important;
 }
-@media (--xs){
-	body{
-		font-size: 85%;
-		main{
-			width: 90%;
-		}
-	}
+
+[v-cloak] {
+  &:before {
+    display: inline-block;
+
+    width: 100%;
+
+    content: "Carregando…";
+    text-align: center;
+  }
 }
-@media (--sm-max){
+
+@media (--xs) {
+  body {
+    font-size: 85%;
+  }
 }
-@media (--sm-min){
+
+@media (--sm-max) {
+}
+
+@media (--sm-min) {
 }
