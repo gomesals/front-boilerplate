@@ -1,0 +1,12 @@
+{
+  "site": {
+    "title": "Front boilerplate",
+    "metas": [{
+      "name": "description",
+      "content": "Description"
+    }, {
+      "name": "robots",
+      "content": "index"
+    }]
+  }
+}

@@ -1,12 +1,12 @@
 meta(charset="utf-8")
 meta(http-equiv="X-UA-Compatible" content="IE=edge")
 meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-//- title=title
-//- each meta in metasName
-	meta(name=meta.name content=meta.content)
+title=site.title
+each meta in site.metas
+  meta(name=meta.name content=meta.content)
 //- each meta in metasProperty
-	meta(property=meta.property content=meta.content)
-//- link(rel="canonical" href="http://silvalexandre.com/")
+  meta(property=meta.property content=meta.content)
+//- link(rel="canonical" href="http://localhost/")
 //- link(rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png")
 //- link(rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png")
 //- link(rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png")
@@ -24,3 +24,5 @@ meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit
 //- meta(name="msapplication-TileColor" content="#1c7d7e")
 //- meta(name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png")
 //- meta(name="theme-color" content="#1c7d7e")
+if env === 'dev'
+  script(src="//192.168.0.100:8081/livereload.js")

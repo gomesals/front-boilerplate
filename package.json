@@ -7,9 +7,10 @@
 		"standard": "standard",
 		"standard:fix": "standard --fix",
 		"standard:verbose": "standard --verbose",
+		"serve": "NODE_ENV=prod node index.js",
 		"deploy": "echo \"TODO: deploy\" && exit 1",
 		"webpack": "webpack --progress --colors --watch",
-		"dev": "echo \"TODO: dev\" && exit 1"
+		"dev": "NODE_ENV=dev nodemon index.js"
 	},
 	"author": "Alexandre Silva <contato@silvalexandre.com>",
 	"license": "MIT",
@@ -24,6 +25,7 @@
 		"grunt-postcss": "^0.9.0",
 		"load-grunt-tasks": "^3.5.2",
 		"lost": "^8.2.0",
+		"nodemon": "^1.12.1",
 		"postcss-cssnext": "^3.0.2",
 		"postcss-font-awesome": "^0.3.4",
 		"postcss-font-magician": "^2.1.0",
