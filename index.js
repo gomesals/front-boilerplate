@@ -10,13 +10,13 @@ app.get('/', (req, res) => {
 
 // STATIC
 app.get(`/robots.txt`, (req, res) => {
-  res.sendFile('robots.txt', {root: __dirname + '/public/'})
+  res.sendFile('robots.txt', {root: path.join(__dirname, 'public')})
 })
 app.get(`/humans.txt`, (req, res) => {
-  res.sendFile('humans.txt', {root: __dirname + '/public/'})
+  res.sendFile('humans.txt', {root: path.join(__dirname, 'public')})
 })
 app.get(`/sitemap.xml`, (req, res) => {
-  res.sendFile('sitemap.xml', {root: __dirname + '/public/'})
+  res.sendFile('sitemap.xml', {root: path.join(__dirname, 'public')})
 })
 
 // SETTINGS
