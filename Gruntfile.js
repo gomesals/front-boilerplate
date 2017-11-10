@@ -79,18 +79,10 @@ module.exports = grunt => {
       }
     },
     copy: {
-      fonts: {
-        files: [{
-          expand: true,
-          cwd: 'src/fonts',
-          src: ['**/*'],
-          dest: 'dist/fonts'
-        }]
-      },
       main: {
         files: [{
           expand: true,
-          cwd: 'src/main',
+          cwd: 'public/',
           src: ['*.*'],
           dest: 'dist'
         }]
