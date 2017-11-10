@@ -1,32 +1,41 @@
 {
-	"name": "default",
+	"name": "front-boilerplate",
 	"version": "0.0.1",
-	"description": "Default front-end site structure",
+	"description": "Boilerplate to front-end only websites",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"standard": "standard",
+		"standard:fix": "standard --fix",
+		"standard:verbose": "standard --verbose",
+		"deploy": "echo \"TODO: deploy\" && exit 1",
+		"webpack": "webpack --progress --colors --watch",
+		"dev": "echo \"TODO: dev\" && exit 1"
 	},
 	"author": "Alexandre Silva <contato@silvalexandre.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"babel-preset-es2015": "^6.22.0",
-		"chai": "^3.5.0",
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.1",
 		"cssnano": "^3.10.0",
 		"grunt": "^1.0.1",
-		"grunt-babel": "^6.0.0",
-		"grunt-contrib-copy": "^1.0.0",
-		"grunt-contrib-imagemin": "^1.0.1",
-		"grunt-contrib-pug": "^1.0.0",
 		"grunt-contrib-watch": "^1.0.0",
-		"grunt-newer": "^1.2.0",
-		"grunt-postcss": "^0.8.0",
-		"imagemin": "^5.3.1",
-		"imagemin-webp": "^4.0.0",
+		"grunt-newer": "^1.3.0",
+		"grunt-postcss": "^0.9.0",
 		"load-grunt-tasks": "^3.5.2",
-		"lost": "^8.0.0",
-		"postcss-cssnext": "^2.10.0",
-		"postcss-scss": "^0.4.1",
+		"lost": "^8.2.0",
+		"postcss-cssnext": "^3.0.2",
+		"postcss-font-awesome": "^0.3.4",
+		"postcss-font-magician": "^2.1.0",
+		"postcss-scss": "^1.0.2",
 		"postcss-strip-inline-comments": "^0.1.5",
-		"precss": "^1.4.0"
+		"precss": "^2.0.0",
+		"standard": "^10.0.3",
+		"webpack": "^3.8.1"
+	},
+	"dependencies": {
+		"config": "^1.28.1",
+		"express": "^4.16.2",
+		"pug": "^2.0.0-rc.4"
 	}
 }
